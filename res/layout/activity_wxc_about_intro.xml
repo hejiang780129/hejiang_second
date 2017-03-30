@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_about"
+    android:layout_gravity="center"
+    android:gravity="center">
+<LinearLayout
+        android:id="@+id/ll_about_intro_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+     <include
+        android:id="@+id/include"        
+        layout="@layout/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_about_intro_parent"
+        />  
+    
+    <ScrollView
+        android:id="@+id/scro_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/ll_about_intro_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 >
+
+                <ImageView
+                    android:id="@+id/img_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:contentDescription="欢迎登陆"
+                    android:src="@drawable/logo2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_welcome"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="51洗车\nVersion 1.0"
+                    android:textSize="12sp"
+                    android:typeface="monospace" />
+            </RelativeLayout>
+<View style="@style/PersonalLine"  android:layout_below="@id/rl_welcome" />
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_welcome"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:lineSpacingMultiplier="1.4"
+                android:autoLink="web"
+                android:text="\n			51洗车, 是一款专注于洗车服务的app应用。
+\n			51团队一直致力于...............................。
+\n\n联系方式:   www.51xiche.com
+\n联系人		
+\n电话		13609283333
+\nQQ	    73882734
+\n欢迎大家关注51官方微信"
+                android:textSize="12sp"
+                android:typeface="monospace" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

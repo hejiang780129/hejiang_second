@@ -1,0 +1,392 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+<LinearLayout
+        android:id="@+id/ll_my_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />    
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="100dp"
+     android:orientation="horizontal"
+     android:background="#00BFFF" >
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:src="@drawable/zhanghao2" />
+
+     <LinearLayout
+         android:id="@+id/ll_my_islogin"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" 
+         >
+  <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal" >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"
+             android:text="注册用户" />
+          <TextView
+             android:id="@+id/frg_my_account"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"
+             android:text="13818888888" />
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"         
+         android:orientation="horizontal" >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"             
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="代金券" />
+          <TextView
+             android:id="@+id/frg_my_voucher"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="12dp"             
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="30元" />
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"         
+         android:orientation="horizontal" >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"             
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="积分" />
+          <TextView
+             android:id="@+id/frg_my_score"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"           
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="30分" />
+     </LinearLayout>
+         
+     </LinearLayout>
+     
+     
+   <LinearLayout
+         android:id="@+id/ll_my_nologin"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:visibility="gone"         
+         android:orientation="horizontal" >
+      <TextView          
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp" 
+             android:layout_gravity="center"          
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="您还未登陆，请先登陆系统" />
+        <ImageView
+         android:id="@+id/frg_my_img_tologin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:layout_marginLeft="20dp"
+         android:src="@drawable/quick_login" />
+  </LinearLayout>
+     
+
+  </LinearLayout>
+
+ 
+<ScrollView
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"> 
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+     <RelativeLayout
+            android:id="@+id/ll_frg_my_voucher"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="我的代金券"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_voucher_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_img_voucher"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </RelativeLayout>
+        <View style="@style/PersonalLine" />
+        <LinearLayout
+            android:id="@+id/ll_frg_my_order"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="我的订单"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_img_order"                
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        <View style="@style/PersonalLine" />
+        <LinearLayout
+            android:id="@+id/ll_frg_my_acc"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="我的账户"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_acc_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_img_acc"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        <View style="@style/PersonalLine" />        
+        <LinearLayout
+            android:id="@+id/ll_frg_my_sco"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="我的积分"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_sco_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_img_sco"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        <View style="@style/PersonalLine" />        
+        <LinearLayout
+            android:id="@+id/ll_frg_my_message"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="我的消息"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_message_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_img_message"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        <View style="@style/PersonalLine" />
+        <LinearLayout
+            android:id="@+id/ll_frg_my_more_vou"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="更多代金券活动"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_more_vou_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_mor_vou_img"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+                <View style="@style/PersonalLine" />
+                
+        <LinearLayout
+            android:id="@+id/ll_frg_my_more_score"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="更多积分活动"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_more_score_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_mor_score_img"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+                <View style="@style/PersonalLine" />
+                
+                
+        </LinearLayout>
+        
+        </ScrollView>     
+</LinearLayout>

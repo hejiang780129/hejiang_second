@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+<LinearLayout
+        android:id="@+id/ll_order_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="horizontal"
+     android:background="#00BFFF" >
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:src="@drawable/zhanghao2" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+  <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal" >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"
+             android:text="注册用户" />
+          <TextView
+             android:id="@+id/order_account"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"
+             android:text="13818888888" />
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"         
+         android:orientation="horizontal" >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"             
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="代金券" />
+          <TextView
+             android:id="@+id/order_voucher"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="12dp"             
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="30元" />
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"         
+         android:orientation="horizontal" >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"             
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="积分" />
+          <TextView
+             android:id="@+id/order_score"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"           
+             android:textColor="#FFFFFF"
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="30分" />
+     </LinearLayout>
+         
+     </LinearLayout>
+
+  </LinearLayout>
+
+ <TextView
+     android:id="@+id/order_xcd_name"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:layout_marginLeft="10dp"   
+     android:textSize="14dp"
+     android:textStyle="bold"     
+     android:text="北京测试洗车店" />
+<View style="@style/BlankingLine" />
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" >
+  <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:orientation="horizontal" >
+         <TextView
+             android:id="@+id/order_date_title"    
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="50dp"
+             android:textSize="12dp"
+             android:textStyle="bold"
+             android:text="购买时间" />
+          <TextView
+             android:id="@+id/order_date"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="60dp"
+             android:textSize="12dp"
+             android:textStyle="bold"
+             android:text="2014年11月20日" />
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"         
+         android:orientation="horizontal" >
+         <TextView
+             android:id="@+id/order_name"         
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="50dp"    
+             android:layout_marginTop="10dp"         
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="普通水洗1次" />
+          <TextView
+             android:id="@+id/order_name_price"                 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="80dp"    
+             android:layout_marginTop="10dp"   
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="30元" />
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"         
+         android:orientation="horizontal" >
+         <TextView
+             android:id="@+id/order_voucher_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="50dp"    
+             android:layout_marginTop="10dp"            
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="代金券余额" />
+          <TextView
+             android:id="@+id/order_voucher_str"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="80dp"
+             android:layout_marginTop="10dp"   
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="30分" />
+     </RelativeLayout>
+             <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"         
+         android:orientation="horizontal" >
+         <TextView
+             android:id="@+id/order_pay_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="50dp"      
+             android:layout_marginTop="10dp"          
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="实际支付额度" />
+          <TextView
+             android:id="@+id/order_pay"              
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="80dp"
+             android:layout_marginTop="10dp"   
+             android:textSize="12dp"
+             android:textStyle="bold"             
+             android:text="30元" />
+     </RelativeLayout>
+     </LinearLayout>
+<View style="@style/BlankingLine" />
+
+           <Button
+                android:id="@+id/order_do"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="20dp"
+                android:background="#00BFFF"
+                android:gravity="center"
+                android:text="现在下订单"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+
+</LinearLayout>

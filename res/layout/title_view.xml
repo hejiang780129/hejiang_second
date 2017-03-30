@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip" 
+    android:background="#fffff0"
+    >
+    
+<ImageButton
+    android:id="@+id/ib_back"
+    android:layout_width="48dp"
+    android:layout_height="fill_parent"
+     android:background="#fffff0"
+    android:src="@drawable/bt_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="个人信息"/>
+    
+        <ImageView
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logo2"/>
+    
+    
+    <ImageButton
+        android:id="@+id/ib_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+         android:background="#fffff0"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/bt_home"
+        android:visibility="visible"/>
+      <ImageButton
+        android:id="@+id/ib_handle1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+         android:background="#fffff0"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/bt_log"
+        android:visibility="gone"/>
+        <ImageButton
+        android:id="@+id/ib_handle2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+         android:background="#fffff0"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/quick_login"
+        android:visibility="gone"/>
+    
+</FrameLayout>

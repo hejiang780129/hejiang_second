@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <item android:state_selected="false" >
+						<layer-list xmlns:android="http://schemas.android.com/apk/res/android">   
+						<!-- 连框颜色值 --><item>   
+						  <shape>   
+						    <solid android:color="@color/orange" />   
+						    <corners android:radius="20dp" />    
+						       
+						  </shape>   
+						</item>   
+						<!-- 主体背景颜色值 -->  
+						<item android:bottom="1dp" android:right="1dp" android:top="1dp" android:left="1dp">   
+						     <shape>
+						    <solid android:color="@color/white" />              
+						    <padding android:left="1dp" android:top="1dp" android:right="1dp"  
+						    android:bottom="1dp" />  
+						   <!-- 应该是圆角 -->
+						    <corners android:radius="20dp" />    
+						     </shape>	 
+						</item>  
+						</layer-list>                
+    </item>  
+    <item android:state_selected="true" >
+    
+						<layer-list xmlns:android="http://schemas.android.com/apk/res/android">   
+						<!-- 连框颜色值 --><item>   
+						  <shape>   
+						    <solid android:color="@color/orange" />   
+						    <corners android:radius="20dp" />    
+						       
+						  </shape>   
+						</item>   
+						<!-- 主体背景颜色值 -->  
+						<item android:bottom="1dp" android:right="1dp" android:top="1dp" android:left="1dp">   
+						     <shape>
+						    <solid android:color="@color/orangered" />              
+						    <padding android:left="1dp" android:top="1dp" android:right="1dp"  
+						    android:bottom="1dp" />  
+						   <!-- 应该是圆角 -->
+						    <corners android:radius="20dp" />    
+						     </shape>	 
+						</item>  
+						</layer-list>                                                
+    </item>
+
+</selector>

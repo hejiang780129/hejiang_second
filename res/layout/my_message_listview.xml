@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/my_message_title"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="18dp"
+        android:text="消息1" />
+    
+        
+       <TextView
+        android:id="@+id/my_message_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="right"
+        android:layout_weight="0.8"   
+        android:layout_marginRight="3dp"           
+        android:textColor="@color/grey"                 
+        android:text="系统消息" />
+        
+        
+  </LinearLayout>
+  
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"   
+        android:textColor="@color/grey"    
+        android:text="消息内容" />
+    
+        <TextView
+        android:id="@+id/my_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" 
+        android:layout_gravity="center_vertical"        
+        android:textColor="@color/grey"
+        android:text="通过优惠活动获取大幅度发大幅度发辅导辅导辅导辅导辅导辅导辅导辅导辅导辅导辅导辅导辅导辅导费" />
+  </LinearLayout>
+  
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"      
+        android:textColor="@color/grey"          
+        android:text="消息日期" />
+    
+        <TextView
+        android:id="@+id/my_message_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" 
+        android:layout_gravity="center_vertical"        
+        android:textColor="@color/grey"
+        android:text="2014-11-24" />
+  </LinearLayout>
+  
+  </LinearLayout>
+
+</LinearLayout>

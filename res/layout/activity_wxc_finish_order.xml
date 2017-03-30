@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<LinearLayout
+        android:id="@+id/ll_finish_order_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp" 
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="您已完成本次洗车服务的评价，时间" />
+        <TextView
+            android:id="@+id/my_order_finishdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"            
+            android:text="2014-11-20" />
+    </LinearLayout>
+<View style="@style/PersonalLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"        
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"                
+                android:text="请评价本次服务" />
+          <View style="@style/BlankingLineList" />            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical"
+            >
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" 
+            android:orientation="horizontal"
+            >
+              <CheckBox
+	            android:id="@+id/my_order_good"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_weight="1"
+	            android:drawableLeft="@drawable/com_good"
+	            android:text="好评" />
+                
+                <CheckBox
+	            android:id="@+id/my_order_mid"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"	            
+                android:drawableLeft="@drawable/com_mid"
+                android:layout_weight="1"
+	            android:text="中评" />
+                    <CheckBox
+	            android:id="@+id/my_order_bad"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/com_bad"
+	            android:text="差评" />   
+           </LinearLayout>
+
+            <EditText
+                android:id="@+id/my_order_discuss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="对本次服务评论点什么"
+                android:inputType="textMultiLine" />
+                        
+</LinearLayout>
+
+    </LinearLayout>
+<View style="@style/PersonalLine" />
+   <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_height="150dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"                
+        android:orientation="vertical" >
+        
+              <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"                
+                android:text="给洗车店评分" />
+          <View style="@style/BlankingLineList" />            
+        </LinearLayout>
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+          <RatingBar
+            android:id="@+id/my_order_commenc"
+            style="?android:attr/ratingBarStyle"
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="0.2"
+            android:rating="0" />
+            <TextView
+                android:id="@+id/my_order_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/my_order_commenc"
+                android:layout_marginLeft="5dp" 
+                android:layout_centerVertical="true"  
+                android:textColor="@color/red"             
+                android:text="0分" />
+   </RelativeLayout>
+    </LinearLayout>
+    <View style="@style/PersonalLine" />
+<Button
+                android:id="@+id/my_order_bt_finish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#00BFFF"
+                android:gravity="center"
+                android:text="完成评价"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+<LinearLayout
+        android:id="@+id/ll_my_about_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />    
+ <FrameLayout
+     android:layout_width="fill_parent"
+     android:layout_height="120dp"
+     android:orientation="horizontal"
+     android:background="@drawable/background_about" >
+
+     <ImageView
+         android:layout_width="60dp"
+         android:layout_height="40dp"
+         android:layout_gravity="center"
+         android:src="@drawable/logo2" />
+     
+  </FrameLayout>
+
+<View style="@style/PersonalLine" />
+<ScrollView
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"> 
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+<LinearLayout
+            android:id="@+id/ll_frg_my_about_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="客服电话 (7x24小时)"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+           <ImageView
+                android:id="@+id/frg_my_about_img_phone"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        
+        <View style="@style/PersonalLine" />
+     <LinearLayout
+            android:id="@+id/ll_frg_my_about_feeback"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_my_about_feeback_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_about_feeback"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        <View style="@style/PersonalLine" />
+        <LinearLayout
+            android:id="@+id/ll_frg_my_about_version"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="版本更新"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_about_version_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_about_version"                
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        <View style="@style/PersonalLine" />
+        <LinearLayout
+            android:id="@+id/ll_frg_my_about_tofriend"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="告诉朋友"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/frg_my_about_tofriend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#a3a3a3"
+                android:textSize="16dp" 
+                />
+
+            <ImageView
+                android:id="@+id/frg_my_my_about_tofriend"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+        <View style="@style/PersonalLine" />        
+        <LinearLayout
+            android:id="@+id/ll_frg_my_about_51"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="关于51"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+                <View style="@style/PersonalLine" />
+
+
+<LinearLayout
+            android:id="@+id/ll_frg_my_about_modpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="修改密码"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/item_info_body_left_arrow" />
+        </LinearLayout>
+                <View style="@style/PersonalLine" />                
+                
+                
+                
+                
+        </LinearLayout>
+        
+        </ScrollView>     
+</LinearLayout>

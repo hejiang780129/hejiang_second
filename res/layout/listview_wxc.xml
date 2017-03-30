@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:descendantFocusability= "blocksDescendants"
+	>
+	
+    <ImageView
+        android:id="@+id/img_wxc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="1dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/name_xcd"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		     android:layout_weight="1"
+		    android:text="@string/list_item_name"
+		    android:layout_marginTop="5dp"
+		    android:textSize="13dp" />
+
+		 <RatingBar
+            android:id="@+id/pingjia_xcd"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_marginTop="5sp"
+             android:rating="1.8" />
+		
+		<TextView
+		    android:id="@+id/dizhi_xcd"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="8sp"
+		     android:layout_weight="1"
+		    android:text="@string/list_item_dizhi"
+		    android:textSize="13dp" />
+
+	</LinearLayout>
+
+ 
+  <LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		 android:layout_weight="1"
+		android:layout_height="80dp">
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="horizontal" >
+
+        
+		<TextView
+		    android:id="@+id/img_jiage"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_marginTop="2dp"
+		    android:layout_gravity="center_vertical"
+		    android:textColor="@color/red"
+		    android:text="￥"
+		    android:textSize="16dp" />         
+                                   
+		<TextView
+		    android:id="@+id/jiage"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+             android:layout_marginTop="4dp"		    
+             android:layout_marginLeft="3dp"
+		    android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/img_jiage"
+		    android:text="30"
+		    android:textSize="13dp" />
+		<TextView
+		    android:id="@+id/jiage_old"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+             android:layout_marginTop="4dp"		    
+             android:layout_toRightOf="@+id/jiage"		    
+		    android:layout_gravity="center_vertical"
+		    android:layout_marginLeft="3dp"
+		    android:text="60"
+		    android:textSize="13dp" />
+		
+		<TextView
+		    android:id="@+id/jiage_down"
+		    android:layout_width="wrap_content"
+		    android:layout_height="12dp"
+             android:layout_marginTop="7dp"		    
+		    android:background="#FF4500"
+		    android:gravity="center_vertical"
+		    android:layout_toRightOf="@+id/jiage_old"
+		    android:layout_marginLeft="6dp"
+		    android:text="立省10元"
+		    android:textColor="@color/white"
+		    android:textSize="8dp"
+		    android:typeface="monospace" />
+
+		</RelativeLayout>
+
+     <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >             
+       <Button
+            android:id="@+id/img_daohang"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="@color/orangered"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="导航去"
+            android:textSize="12sp"
+            android:background="@drawable/button_click_stype"
+            android:clickable="true" 
+            android:focusable="false"
+             />
+    
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >
+            
+		<TextView
+		    android:id="@+id/juli"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:layout_weight="1"
+		    android:layout_gravity="center_vertical"
+		    android:text="距离"
+		    android:textSize="13dp" />
+
+		<TextView
+		    android:id="@+id/goumairenshu"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:layout_weight="1"
+		    android:text="购买人数"
+		    android:layout_gravity="center_vertical"
+		    android:textSize="13dp" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/my_vou_exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14dp"
+        android:text="XXXXXX活动" />
+    
+    
+    <TextView
+        android:id="@+id/my_vou_exercise_edate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_vou_exercise_num"
+        android:layout_toLeftOf="@+id/my_vou_more_go"
+        android:layout_marginRight="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/red"
+        android:text="2014-11-20截止" />
+    
+     <TextView
+        android:id="@+id/my_vou_exercise_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/my_vou_more_go"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"        
+        android:textSize="14dp"
+        android:textColor="@color/red"
+        android:text="30元" />
+     
+      <ImageView
+            android:id="@+id/my_vou_more_go"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"            
+            android:scaleType="fitXY"
+            android:src="@drawable/quick_login"
+             />
+   
+</RelativeLayout>

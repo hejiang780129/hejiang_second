@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/order_list_sub_num_tit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/grey"        
+        android:text="订单号" />
+    
+        <TextView
+        android:id="@+id/order_list_sub_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/order_list_sub_num_tit"
+        android:layout_centerVertical="true"              
+        android:textColor="@color/grey"          
+        android:text="11111" />
+        
+        <Button
+        android:id="@+id/order_list_sub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="5dp"   
+        android:layout_centerVertical="true"    
+        android:layout_alignParentRight="true"
+        android:background="#00BFFF"
+        android:textColor="#fff"
+        android:textSize="16dp"            
+        android:text="  评价拿积分  " />
+
+  </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/order_list_sub_edate_tit"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"    
+        android:textColor="@color/grey"
+        android:text="完成时间" />
+    
+        <TextView
+        android:id="@+id/order_list_sub_edate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp" 
+        android:layout_gravity="center_vertical"        
+        android:textColor="@color/grey"
+        android:text="2014-11-20" />
+        
+        <TextView
+        android:id="@+id/order_list_sub_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"        
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        android:text="已完成" />
+  </LinearLayout>
+  
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+   <TextView
+        android:id="@+id/order_list_sub_vpay_tit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"   
+        android:textColor="@color/grey"
+        android:text="代金券支付" />
+    
+        <TextView
+        android:id="@+id/order_list_sub_vpay"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"      
+        android:layout_gravity="center_vertical"      
+        android:textColor="@color/grey"  
+        android:text="20元" />
+        
+  </LinearLayout>
+
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+  
+        
+        <TextView
+        android:id="@+id/order_list_sub_opay_tit"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical" 
+        android:textColor="@color/grey"               
+        android:text="在线支付" />
+        
+        <TextView
+        android:id="@+id/order_list_sub_opay"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_gravity="center_vertical"      
+        android:textColor="@color/grey"  
+        android:text="30元" />
+
+  </LinearLayout>
+    
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"   
+        android:textColor="@color/grey"             
+        android:text="订单评价" />
+    
+    <ImageView
+        android:id="@+id/order_list_sub_img_pingjia"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_gravity="center_vertical"  
+        android:background="@drawable/com_no"      
+        />           
+  </LinearLayout>
+  
+  
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"   
+        android:textColor="@color/grey"             
+        android:text="订单评分" />
+    
+        <RatingBar
+        android:id="@+id/order_list_sub_rating"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"      
+        android:layout_gravity="center_vertical"      
+         style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="0" />
+       
+  </LinearLayout>
+  
+  
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/order_list_sub_comment_tit"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"    
+        android:textColor="@color/grey"           
+        android:text="订单评论" />
+    
+        <TextView
+        android:id="@+id/order_list_sub_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"   
+        android:layout_centerVertical="true"        
+        android:layout_toRightOf="@+id/order_list_sub_comment_tit"   
+        android:textColor="@color/grey"
+        android:lines="1"
+        android:text="今天洗的还不错，赞一个" />
+        
+  </RelativeLayout>
+  
+     <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+        
+       <Button
+        android:id="@+id/order_list_sub_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_alignParentRight="true"   
+        android:background="#00BFFF"
+        android:textColor="#fff"
+        android:textSize="16dp"     
+        android:visibility="gone"                         
+        android:text="   追加评论    " />
+  </RelativeLayout>
+  
+</LinearLayout>

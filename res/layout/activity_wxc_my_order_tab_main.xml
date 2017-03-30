@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+           <RadioGroup
+                android:id="@id/main_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tab_bg1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@id/radio_button0"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="2.5dip"
+                    android:checked="true"               
+                    android:drawableBottom="@drawable/my_bg_bottom"
+                    android:drawablePadding="8dp"  
+                    android:textColor="@color/grey"
+                    android:textSize="14dp"
+                    android:tag="radio_button0"     
+                    android:text="未完成" />
+
+                <RadioButton
+                    android:id="@id/radio_button1"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="2.5dip"
+                    android:drawableBottom="@drawable/my_bg_bottom"
+                    android:drawablePadding="8dp"  
+                    android:textColor="@color/grey"
+                    android:textSize="14dp"
+                    android:tag="radio_button1"                    
+                    android:text="已完成" />
+
+                <RadioButton
+                    android:id="@id/radio_button2"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="2.5dip"
+                    android:drawableBottom="@drawable/my_bg_bottom"
+                    android:drawablePadding="8dp"
+                    android:textSize="14dp"
+                    android:tag="radio_button2"
+                    android:textColor="@color/grey"                    
+                    android:text="已评价" />
+
+                <RadioButton
+                    android:id="@id/radio_button3"
+                    style="@style/main_tab_bottom"
+                    android:layout_marginTop="2.5dip"
+                    android:drawableBottom="@drawable/my_bg_bottom"
+                    android:drawablePadding="8dp"
+                    android:textSize="14dp"
+                    android:tag="radio_button3"
+                    android:textColor="@color/grey"                    
+                    android:text="未评价" />
+            </RadioGroup>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:visibility="gone" />
+        </LinearLayout>
+    </TabHost>
+ 
+    
+</RelativeLayout>

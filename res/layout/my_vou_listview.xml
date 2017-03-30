@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/my_vou_list_num"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="18dp"
+        android:text="代金券1" />
+    
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"   
+        android:gravity="right"        
+        android:textColor="@color/grey"
+        android:layout_weight="1"     
+        android:text="额度" />
+        
+                <TextView
+        android:id="@+id/my_vou_list_item_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.2"              
+        android:textColor="@color/grey"                 
+        android:text="30元" />
+        
+        
+  </LinearLayout> 
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"    
+        android:textColor="@color/grey"    
+        android:text="获取方式" />
+    
+        <TextView
+        android:id="@+id/my_vou_list_getby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" 
+        android:layout_gravity="center_vertical"        
+        android:textColor="@color/grey"
+        android:text="通过优惠活动获取" />
+  </LinearLayout>
+  
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"    
+        android:textColor="@color/grey"    
+        android:text="获取日期" />
+    
+        <TextView
+        android:id="@+id/my_vou_list_getdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" 
+        android:layout_gravity="center_vertical"        
+        android:textColor="@color/grey"
+        android:text="2014-11-24" />
+  </LinearLayout>
+  
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"    
+        android:textColor="@color/grey"            
+        android:text="有效期" />
+    
+        <TextView
+        android:id="@+id/my_vou_list_limitdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" 
+        android:layout_gravity="center_vertical"        
+        android:textColor="@color/grey"
+        android:text="3天有效" />
+  </LinearLayout>
+  
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"  
+        android:textColor="@color/grey"              
+        android:text="目前状态" />
+    
+        <TextView
+        android:id="@+id/my_vou_list_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" 
+        android:layout_gravity="center_vertical"        
+        android:textColor="@color/red"
+        android:text="有效" />
+  </LinearLayout>
+
+
+  </LinearLayout>
+</LinearLayout>

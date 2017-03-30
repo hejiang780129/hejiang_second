@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/renminbi" />
+
+    <TextView
+        android:id="@+id/lv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:textSize="25sp"
+        android:text="20元" />
+     <TextView
+        android:id="@+id/lv_service"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/lv_price"
+        android:textSize="18sp"
+        android:text="普通清洗" />
+      <Button
+            android:id="@+id/bt_go"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="#FF8833"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/lv_service"
+            android:text="立即抢购下订单"
+            android:textSize="12sp"
+            android:clickable="true" 
+            android:focusable="false"
+             />
+   
+</RelativeLayout>
