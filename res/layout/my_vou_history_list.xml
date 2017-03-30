@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:text="消费记录" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"    
+        android:layout_weight="1"    
+        android:orientation="vertical" >
+     </LinearLayout>
+</LinearLayout>
+    
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:text="消费时间" />
+    
+    <TextView
+        android:id="@+id/order_list_his_date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"        
+        android:text="2014-11-20" />
+</LinearLayout>   
+
+ 
+ 
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:text="消费内容" />
+    
+     <TextView
+        android:id="@+id/order_list_his_xcd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"  
+        android:gravity="center"      
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"        
+        android:layout_marginLeft="10dp"    
+        android:text="测试洗车店" />
+         <TextView
+        android:id="@+id/order_list_his_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" 
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:text="普通洗车1次" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"    
+        android:layout_weight="1"    
+        android:orientation="vertical" >
+     </LinearLayout>
+       
+
+</LinearLayout>
+ 
+    
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:text="消费额度" />
+    
+<TextView
+        android:id="@+id/order_list_his_total_num"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"        
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"           
+        android:text="50元" />
+</LinearLayout>
+ 
+    
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:text="订单状态" />
+    
+<TextView
+        android:id="@+id/order_list_his_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"        
+        android:layout_marginLeft="10dp"
+       android:layout_marginTop="5dp"
+        android:textColor="@color/grey"        
+        android:text="已完成" />
+</LinearLayout>
+ 
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"    
+        android:layout_weight="1"    
+        android:orientation="vertical" >
+     </LinearLayout>
+</LinearLayout>  
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/order_list_sub_vpay_tit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"  
+       android:layout_marginTop="5dp"
+        android:textColor="@color/grey"      
+        android:text="代金券支付" />
+    
+        <TextView
+        android:id="@+id/order_list_his_vpay"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"      
+        android:layout_gravity="center_vertical"      
+       android:layout_marginTop="5dp"
+        android:textColor="@color/grey"  
+        android:text="20元" />
+        
+        <TextView
+        android:id="@+id/order_list_sub_opay_tit"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_gravity="center_vertical"  
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:text="在线支付" />
+        
+        <TextView
+        android:id="@+id/order_list_his_opay"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center_vertical"      
+       android:layout_marginTop="5dp"
+        android:textColor="@color/grey"  
+        android:text="30元" />
+
+  </LinearLayout>
+ 
+</LinearLayout>

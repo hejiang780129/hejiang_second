@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+<LinearLayout
+        android:id="@+id/ll_share_upload_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />   
+  
+  <LinearLayout
+        android:id="@+id/ll_second_step"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/white"        
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#00BFFF"
+        android:orientation="horizontal"
+         >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="录入洗车店信息  >"
+            android:textColor="@color/white" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="  拍照  >"
+            android:textColor="@color/white" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="  登录上传拿积分"
+            android:textColor="@color/red" />
+            
+</LinearLayout>   
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" 
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:textColor="#00BFFF"  
+            android:textSize="16dp"          
+            android:text="登录上传拿积分 "/>
+        
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#00BFFF" />
+
+    </LinearLayout>
+        
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="30dp"      
+        android:orientation="horizontal"
+       >       
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icon_gcoding"
+              />
+       
+           <TextView
+             android:id="@+id/share_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#00BFFF"  
+            android:textSize="14dp"          
+            android:text=""/>
+        
+        
+</LinearLayout>
+
+</LinearLayout>
+<Button
+        android:id="@+id/share_whole_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#00BFFF"
+        android:textColor="#fff"        
+        android:text="上传信息"
+        android:textSize="16sp" />
+  
+</LinearLayout>

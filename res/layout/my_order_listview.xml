@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/order_list_date"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:textSize="16dp"
+        android:text="2014-11-20" />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:layout_weight="1"  
+    android:layout_marginTop="3dp"  
+    android:orientation="vertical" >
+        <TextView
+        android:id="@+id/order_list_xcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"        
+        android:layout_weight="1"        
+        android:text="测试洗车店" />
+         <TextView
+        android:id="@+id/order_list_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" 
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"       
+        android:textSize="12dp" 
+        android:textColor="@color/grey"
+        android:text="普通洗车1次" />
+     </LinearLayout>
+        <TextView
+        android:id="@+id/order_list_price"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"       
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:textSize="16dp"        
+        android:text="30元" />
+        
+        <TextView
+        android:id="@+id/order_list_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/red"
+        android:textSize="16dp"        
+        android:text="已完成" />
+        
+       <Button
+        android:id="@+id/order_list_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"        
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"   
+        android:background="#00BFFF"
+        android:textColor="#fff"
+        android:textSize="16dp"     
+        android:visibility="gone"
+        android:text="完成" />
+
+</LinearLayout>

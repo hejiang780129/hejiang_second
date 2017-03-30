@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<LinearLayout
+        android:id="@+id/ll_score_more_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />
+<View style="@style/PersonalLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:background="@color/white"
+        >
+        
+        <ImageView
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY" 
+        android:src="@drawable/align_head">    
+        </ImageView>    
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="16dp"
+        android:text="赚更多积分" />
+        
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"        
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:layout_marginBottom="5dp"
+        android:textSize="16dp"
+        android:text="积分说明" />
+        
+    </LinearLayout>
+    <View style="@style/BlankingLineNotopList" />
+
+    
+    <ListView
+        android:id="@+id/my_score_more_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:dividerHeight="0.5dp"
+        android:background="@color/white"
+         >
+    </ListView>
+    <View style="@style/PersonalLine" />
+</LinearLayout>

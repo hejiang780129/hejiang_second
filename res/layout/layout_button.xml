@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <Button
+            android:id="@+id/bt_go"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="#FF8833"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text=" 立 即 抢 购 "
+            android:textSize="12sp"
+            android:clickable="true" 
+            android:focusable="false"
+             />
+</RelativeLayout>

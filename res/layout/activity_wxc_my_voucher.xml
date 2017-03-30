@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+<LinearLayout
+        android:id="@+id/ll_my_vou_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />
+   <View style="@style/PersonalLine" />
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:background="#00BFFF" 
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="我的余额" />
+        <TextView
+            android:id="@+id/my_vou_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="30元" />
+        
+       </LinearLayout> 
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"        
+        android:background="#00BFFF"
+        android:orientation="vertical"
+        >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:text="有效代金券总额度" />
+        <TextView
+            android:id="@+id/my_vou_total_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" 
+            android:layout_marginLeft="50dp"    
+            android:textColor="@color/white"       
+            android:text="20元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"            
+            android:text="已消费额度" />
+        <TextView
+            android:id="@+id/my_vou_total_consume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"    
+            android:layout_marginLeft="90dp"    
+            android:textColor="@color/white"  
+            android:layout_marginBottom="5dp"        
+            android:text="10元" />
+        
+        <ImageView
+            android:id="@+id/my_vou_total_consume_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"    
+            android:layout_marginLeft="50dp"     
+            android:layout_marginBottom="5dp"           
+            android:src="@drawable/quick_login"
+          ></ImageView>
+            
+        
+    </LinearLayout>  
+    </LinearLayout>      
+<View style="@style/PersonalLine" />      
+   <ListView
+       android:id="@+id/my_vou_list"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_weight="1"
+       android:background="@color/white"
+       android:gravity="center" >
+    </ListView>   
+      
+   
+</LinearLayout>

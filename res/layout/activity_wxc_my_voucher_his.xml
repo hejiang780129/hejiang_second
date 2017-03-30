@@ -1,0 +1,24 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_vou_his_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" />
+    <View style="@style/PersonalLine" />
+    <ListView
+        android:id="@+id/my_vou_his_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:dividerHeight="0.5dp">
+    </ListView>
+
+</LinearLayout>

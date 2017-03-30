@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">51洗车</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_wxc_splash">WxcSplashActivity</string>
+    <string name="title_activity_test">闪屏</string>
+    <string name="version_name">51洗车车主客户端\n\nVersion 1.0.0</string>
+    <string name="title_activity_hj_test">HjTestActivity</string>
+    <string name="title_activity_wxc_main">WxcMainActivity</string>
+    <string name="title_activity_wxc1_main">Wxc1MainActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- 底部的tab -->
+    <string name="bottom_first">首页</string>
+    <string name="bottom_my">我的</string>
+    <string name="bottom_set">关于</string>
+    <!-- 洗车店listview -->
+    <string name="list_item_name">洗车店名称</string>
+    <string name="list_item_pingjia">洗车店评价</string>
+    <string name="list_item_dizhi">洗车店地址</string>
+    <string name="list_item_kanpinglun">看评论</string>
+    <string name="title_activity_wxc_wyxc_list">WxcWyxcList</string>
+    <string name="title_activity_wxc_wyxc_lbs">WxcWyxcLbsActivity</string>
+    <string name="title_activity_wxc_wyxc_info">WxcWyxcInfoActivity</string>
+    <string name="title_activity_wxc_login">WxcLoginActivity</string>
+    <string name="title_activity_wxc_register">WxcRegisterActivity</string>
+    <string name="title_activity_wxc_order">WxcOrderActivity</string>
+    <string name="title_activity_wxc_pay">WxcPayActivity</string>
+    <string name="title_activity_wxc_pay_result">WxcPayResultActivity</string>
+    <string name="msg_load_ing">加载中...</string>
+    <string name="msg_post_ing">提交中...</string>
+    <string name="title_activity_wxc_my_order_tab_main">我的订单</string>
+    <string name="title_activity_my_test">MyTestActivity</string>
+    <string name="title_activity_wxc_finish_order">WxcFinishOrderActivity</string>
+    <string name="title_activity_wxc_finish_order_comm">WxcFinishOrderCommActivity</string>
+    <string name="title_activity_wxc_my_voucher">WxcMyVoucherActivity</string>
+    <string name="title_activity_wxc_my_voucher_his">WxcMyVoucherHisActivity</string>
+    <string name="title_activity_wxc_my_gain_vou">WxcMyGainVouActivity</string>
+    <string name="title_activity_wxc_my_score">WxcMyScoreActivity</string>
+    <string name="title_activity_wxc_my_score_more">WxcMyScoreMoreActivity</string>
+    <string name="title_activity_wxc_my_account">WxcMyAccountActivity</string>
+    <string name="title_activity_wxc_my_score_budget">WxcMyScoreBudgetActivity</string>
+    <string name="title_activity_wxc_message">WxcMessageActivity</string>
+    <string name="title_activity_wxc_about">WxcAboutActivity</string>
+    <string name="title_activity_wxc_feed_back">WxcFeedBackActivity</string>
+    <string name="title_activity_wxc_about_intro">WxcAboutIntroActivity</string>
+    <string name="title_activity_wxc_share_xcd">WxcShareXcdActivity</string>
+    <string name="title_activity_wxc_pic_test">WxcPicTestActivity</string>
+    <string name="title_activity_wxc_share_xcd_take_photo">WxcShareXcdTakePhotoActivity</string>
+    <string name="title_activity_wxc_share_xcd_upload">WxcShareXcdUploadActivity</string>
+    <string name="title_activity_wxc_wyxc_info_all_com">WxcWyxcInfoAllComActivity</string>
+    <string name="title_activity_wxc_base">WxcBaseActivity</string>
+    <string name="title_activity_wxc_mofiy_pwd">WxcMofiyPwdActivity</string>
+    <string name="title_activity_wxc_beneif">WxcBeneifActivity</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <item name="bottom" type="id"></item>
+
+    <string name="title_activity_wxc_route_plan">WxcRoutePlanActivity</string>
+    <string name="title_activity_wxc_promp">WxcPrompActivity</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources xmlns:android="http://schemas.android.com/apk/res/android">  
+<style name="myTitleBg">  
+       <item name="android:background">#fffff0</item>  
+</style>  
+<style name="myTheme" parent="android:Theme.Light">  
+     <item name="android:windowNoTitle">false</item>  
+     <item name="android:windowTitleSize">50dp</item>  
+     <item name="android:windowTitleBackgroundStyle">@style/myTitleBg</item>  
+  
+</style>  
+  
+</resources>  
